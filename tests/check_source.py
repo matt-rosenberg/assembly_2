@@ -8,10 +8,10 @@ text = SOURCE.read_text(encoding="utf-8")
 
 ALLOWED_INSTRUCTIONS = {
     "movq", "movl", "movslq",
-    "addq", "subq", "imulq", "cmpq",
+    "addq", "subq", "imulq", "cmpq", "cmpl",
     "jmp", "je", "jne", "jl", "jle", "jg", "jge",
     "jb", "jbe", "ja", "jae",
-    "pushq", "call", "leave", "ret",
+    "pushq", "popq", "call", "leave", "ret"
 }
 
 FUNCTIONS = [
